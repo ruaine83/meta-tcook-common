@@ -3,28 +3,41 @@ LICENSE = "MIT"
 
 inherit packagegroup
 
+PACKAGE_ARCH = "${TUNE_PKGARCH}"
+
 # Packagegroups to be installed in general-purpose images
 RDEPENDS:${PN} += " \
     packagegroup-core-ssh-openssh \
 "
 
 
-# Development tools and utilities for general-purpose images
+# General tools and utilities for general-purpose images
 RDEPENDS:${PN} += " \
-    gcc g++ gdb \
-    make cmake \
-    python3 python3-pip \
-    go \
-    docker-moby docker-compose \
-    podman \
-    procps \
+    busybox \
+    bash \
+    gawk \
+    git \
+    openssh \
+    sudo \
+    vim \
+    nano \
+    htop \
+    tmux \
+    screen \
     strace \
-    rust cargo \
-    nodejs nodejs-npm \
-    lua \
-    perl \
-    ruby \
-    googletest glog \
-    iputils iputils-arping \
-    postgresql-client sqlite3 \
+    iptables \
+    net-tools \
+    iftop \
+    iotop \
+    lsof \
+    rsync \
+    wget \
+    curl \
+    unzip \
+    zip \
+    pciutils \
+    usbutils \
+    lsb-release \
+    nfs-utils \
+    openssh \
 "

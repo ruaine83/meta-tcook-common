@@ -3,39 +3,17 @@ LICENSE = "MIT"
 
 inherit packagegroup
 
+PACKAGE_ARCH = "${TUNE_PKGARCH}"
+
 # Add various packages to the packagegroup
 RDEPENDS:${PN} += " \
     packagegroup-pixeleatedrailroad-general \
+    packagegroup-pixeleatedrailroad-development \
     packagegroup-pixeleatedrailroad-clang \
 "
 
 # Individual recipes for Pixelated Railroad common customizations
 RDEPENDS:${PN} += " \
-    busybox \
-    bash \
-    gawk \
-    git \
-    openssh \
-    sudo \
-    vim \
-    nano \
-    htop \
-    tmux \
-    screen \
-    strace \
-    iptables \
-    net-tools \
-    iftop \
-    iotop \
-    lsof \
-    rsync \
-    wget \
-    curl \
-    unzip \
-    zip \
-    pciutils \
-    usbutils \
-    lsb-release \
     "
     
 # User recipe definitions
