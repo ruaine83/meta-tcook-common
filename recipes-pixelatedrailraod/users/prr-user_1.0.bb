@@ -39,10 +39,6 @@ do_deploy:append () {
     "
 }
 
-pkg_postinst:${PN} () {
-    usermod -s /bin/bash ${THIS_USER}
-}
-
-pkg_postinst:${PN} () {
+pkg_postinst_ontarget:${PN} () {
     usermod -s /bin/bash ${THIS_USER}
 }
