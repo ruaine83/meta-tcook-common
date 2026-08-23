@@ -18,6 +18,7 @@ RDEPENDS:${PN} += " \
     
 # User recipe definitions
 RDEPENDS:${PN} += " \
+    test-configs \
     pixelated-groups \
     admin-user \
     prr-user \
