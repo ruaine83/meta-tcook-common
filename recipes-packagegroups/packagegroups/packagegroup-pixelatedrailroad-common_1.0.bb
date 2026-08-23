@@ -6,10 +6,12 @@ inherit packagegroup
 # Add various packages to the packagegroup
 RDEPENDS:${PN} += " \
     packagegroup-pixeleatedrailroad-general \
+    packagegroup-pixeleatedrailroad-clang \
 "
 
 # Individual recipes for Pixelated Railroad common customizations
 RDEPENDS:${PN} += " \
+    busybox \
     bash \
     gawk \
     git \
