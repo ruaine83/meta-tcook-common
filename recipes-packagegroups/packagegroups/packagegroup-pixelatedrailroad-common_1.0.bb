@@ -25,3 +25,8 @@ RDEPENDS:${PN} += " \
     prr-user \
     remote-user \
 "
+
+# Packages to remove from the build
+RDEPENDS:${PN} += " \
+    packagegroup-pixelatedrailroad-remove \
+"
