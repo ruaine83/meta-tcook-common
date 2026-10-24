@@ -1,4 +1,4 @@
-DESCRIPTION = "Bitbake Recipe for defining packages for PixelatedRailroad Builds"
+DESCRIPTION = "Bitbake Recipe for defining packages for Pixelated Railroad Builds"
 SUMMARY = "Packages to include to ensure TPM2 support"
 LICENSE = "MIT"
 

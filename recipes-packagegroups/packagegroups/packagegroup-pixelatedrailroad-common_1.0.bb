@@ -1,4 +1,5 @@
-DESCRIPTION = "Common packagegroup for Pixelated Railroad Layer"
+DESCRIPTION = "Bitbake Recipe for defining packages for Pixelated Railroad Layer"
+SUMMARY = "Packages to include in Builds"
 LICENSE = "MIT"
 
 inherit packagegroup
